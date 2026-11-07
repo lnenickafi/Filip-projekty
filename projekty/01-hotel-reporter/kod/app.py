@@ -55,6 +55,7 @@ if soubor:
         },
         disabled=["Vystaveno", "Číslo", "Forma úhrady", "Celkem s DPH", "V rozsahu"],
         hide_index=True,
+        height=(len(poradi) + 1) * 35 + 3,  # všechny doklady bez posouvání
         # Při změně souboru nebo dne se výběr vrátí na výchozí.
         key=f"vyber-{soubor.file_id}-{den}",
     )
