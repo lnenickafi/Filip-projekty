@@ -7,7 +7,7 @@ podle kterých se Claude chová, jsou v [`CLAUDE.md`](CLAUDE.md) a načítá si 
 
 | Projekt | O čem | Stav |
 |---|---|---|
-| — | zatím žádný | — |
+| [01 — Hotel reporter](projekty/01-hotel-reporter/README.md) | Streamlit appka na denní uzávěrku tržeb hotelu z exportu dokladů | hotovo |
 
 Stavy: nápad · probíhá · pozastaveno · hotovo
 
