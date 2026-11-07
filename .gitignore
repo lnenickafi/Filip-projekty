@@ -1,0 +1,29 @@
+# lokální a dočasné
+*.tmp
+*.tmp.*
+.DS_Store
+Thumbs.db
+~$*
+
+# tajemství — repo je VEŘEJNÉ; pojistka, ne náhrada za pozornost
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+secrets*
+credentials*
+
+# výstupy, velká data, závislosti
+vystupy/
+node_modules/
+.venv/
+__pycache__/
+dist/
+build/
+
+# lokální poznámky a nastavení Clauda - nikdy nepushovat
+CLAUDE.local.md
+*.local.md
+.claude/settings.local.json
