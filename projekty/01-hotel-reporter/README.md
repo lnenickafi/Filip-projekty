@@ -1,6 +1,9 @@
 # 01 — Hotel reporter
 
-**Stav:** probíhá · **Vzniklo:** 2026-04-17 · **Převzato sem:** 2026-11-07
+**Stav:** hotovo · **Vzniklo:** 2026-04-17 · **Převzato sem:** 2026-11-07
+
+**Appka:** https://hzh-hotel-reporter.streamlit.app/ (Streamlit Cloud, nasazuje
+se automaticky z `main` — každý push do `main` jde rovnou do provozu)
 
 Webová appka ve Streamlitu na denní uzávěrku tržeb hotelu. Nahraje se export
 dokladů z hotelového systému (`.xlsx`) a appka z něj vyrobí Excel report
@@ -28,8 +31,10 @@ hotově a kartou.
   - tabulka v reportu má tenké ohraničení.
 - Ověřeno: export z 6.–7. 11. dává výstup shodný s ručně připraveným
   `6.xlsx` (0 rozdílů v buňkách); hraniční případ „jen tržby 6. večer“ → `6.xlsx`.
-- Teď: Filip zkouší appku lokálně, pak push a napojení Streamlit Cloudu
+- Nasazeno na Streamlit Cloud z tohohle repa
   (main file: `projekty/01-hotel-reporter/kod/app.py`).
+- Zbývá: smazat na Streamlit Cloudu starou appku z archivovaného repa
+  `hotel-reporter` (pokud tam ještě je).
 - Blokuje: nic
 
 ## Jak to funguje
