@@ -11,14 +11,20 @@ Excel report k odevzdání — doklady za uzávěrkový den, součty hotově a k
 
 ## Proč vznikla
 
-Uzávěrka se dřív dělala ručně a s několika zbytečnými kroky:
+Uzávěrka tržeb se dělá **každý den** a vývoj šel ve třech krocích:
 
-1. Stáhnout export dokladů — starý formát `.xls`, otevře se jen v chráněném zobrazení.
-2. Otevřít ho v Excelu, povolit úpravy a uložit jako `.xlsx`.
-3. Ručně vybrat doklady od 10:00 do 12:00 dalšího dne, přepsat čísla dokladů,
-   sečíst platby hotově a kartou.
-
-Teď stačí export nahrát a stáhnout hotový report.
+1. **Čistě ručně v Excelu.** Stáhnout export dokladů, smazat desítky
+   nepotřebných sloupců, vytřídit doklady od 10:00 do 12:00 dalšího dne,
+   doplnit čísla dokladů, sečíst platby hotově a kartou a naformátovat
+   tabulku k odevzdání — každý den znovu.
+2. **První verze appky (duben 2026).** Třídění, výpočty a formátování
+   převzal skript. Export ze systému ale uměl přečíst až po ručním převodu:
+   otevřít `.xls` v Excelu, povolit úpravy v chráněném zobrazení a uložit
+   jako `.xlsx`. Ve sloupci s číslem dokladu navíc vznikala chybná čísla.
+3. **Současná verze (listopad 2026).** Export se nahraje tak, jak se stáhne,
+   chyba s čísly dokladů je opravená, appka sama kontroluje podezřelé doklady
+   a výběr jde ručně doladit. Z každodenní ruční práce zbylo nahrát soubor
+   a stáhnout hotový report.
 
 ## Ukázka
 
